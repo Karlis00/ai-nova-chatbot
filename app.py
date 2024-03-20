@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from google.cloud import dialogflow_v2beta1 as dialogflow
 import os
-GOOGLE_AUTHENTICATION_FILE_NAME = "env/key.json"
+GOOGLE_AUTHENTICATION_FILE_NAME = ".env"
 current_directory = os.path.dirname(os.path.realpath(__file__))
 path = os.path.join(current_directory, GOOGLE_AUTHENTICATION_FILE_NAME)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = path
