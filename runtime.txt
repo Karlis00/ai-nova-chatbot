@@ -1,1 +1,5 @@
-python-3.11.8
+# example: set to python-3.11.7
+echo "python-3.11.7" > runtime.txt
+git add runtime.txt
+git commit -m "Use python-3.11.7 for build (replace unavailable 3.11.8)"
+git push
